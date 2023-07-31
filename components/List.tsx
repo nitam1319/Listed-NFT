@@ -75,11 +75,6 @@ export default function List() {
   const [time ,setTime] = useState(Date.now()/1000)
   const startingPrice = listedNfts[2].startingPrice as number;
   const endingPrice = listedNfts[2].endingPrice as number;
-  // const pp = startingPrice - endingPrice;
-  // let p = listedNfts[2].expiresAt - time / pp;
-  // console.log((Math.floor(
-  //   ((listedNfts[2].expiresAt - time)/((listedNfts[2].expiresAt - listedNfts[2].startsAt)/(startingPrice - endingPrice)) + endingPrice+1)
-  // )))
   useEffect(() => {
     setTimeout(() => {
       setTime(Date.now()/1000 )
